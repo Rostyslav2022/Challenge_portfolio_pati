@@ -3,10 +3,11 @@
 **Being that the modern world does not stand still and the world of computer technology is developing rapidly, 
 and that is why I decided to try myself in something new. 
 I want to feel these changes is not from the Google page.
-From the project I expect new knowledge and opportunities.
-_Thank you very much for participating in your project:)_**
+From the project I expect new knowledge and opportunities.**
 
-## Task 2: Selectors
+_Thank you very much for participating in your project:)_
+
+## Task 2: Selectors.
 
 _**logo_scouts_panel_xpath**_
 * //*[@id="__next"]/div[1]/main/div[3]/div[1]/div/div[1]
