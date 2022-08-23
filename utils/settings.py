@@ -1,6 +1,5 @@
 import os
 import sys
-
 from selenium.webdriver.common.by import By
 
 SYSTEM = sys.platform
