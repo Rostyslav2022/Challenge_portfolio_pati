@@ -1,14 +1,17 @@
-import os
-from selenium.webdriver.chrome import webdriver
+import time
+from lib2to3.pgen2 import driver
+
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
-from selenium.webdriver.chrome.service import Service
-from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from utils.settings import DEFAULT_LOCATOR_TYPE, EXPLICITLY_WAIT
 
 
 class BasePage:
 
     def __init__(self, driver: WebDriver):
+        self.players_count_element_xpath = '// *[ @ id = "__next"] / div[1] / main / div[2] / div[1] / div / div[1] '
         self.driver = driver
 
     def field_send_keys(self, selector, value, locator_type=By.XPATH):
@@ -21,31 +24,27 @@ class BasePage:
         self.driver.get(url)
         return self.driver.title
 
-    # def element_text(self):
-    #     os.chmod(DRIVER_PATH, 755)
-    #     self.driver_service = Service(executable_path=DRIVER_PATH)
-    #     # self.driver.service = Service(executable.path = ChromeDriverManager().install())
-    #     self.driver = webdriver.Chrome(service=self.driver_service)
-    #     self.driver.get('https://scouts-test.futbolkolektyw.pl')
-    #     self.driver.fullscreen_window()
-    #     self.driver.implicitly_wait(IMPLICITLY_WAIT)
-    #
     # def assert_element_text(self):
-    #     actual_text = self.get_element_text('//*[@id="__next"]/form/div/div[1]/h5')
-    #     expected_text = 'Scouts Panel'
-    #     assert actual_text == expected_text
-    #
-    # def get_element_text(self, url):
-    #     self.driver.get(url)
-    #     return self.driver.title
+    #     self.driver = 'https://scouts-test.futbolkolektyw.pl'
+    #     self.xpath = '//*[@id="__next"]/form/div/div[1]/h5'
+    #     self.expected_text = 'Scouts Panel'
+    #     element = self.driver.find_element(by=By.XPATH, value=self.xpath)
+    #     element = element.text
+    #     element_text = element.text
+    #     assert self.expected_text==element_text
 
-    def assert_element_text(self):
-        self.driver = 'https://scouts-test.futbolkolektyw.pl'
-        self.xpath = '//*[@id="__next"]/form/div/div[1]/h5'
-        self.expected_text = 'Scouts Panel'
-        element = self.driver.find_element(by=By.XPATH, value=self.xpath)
-        element = element.text
-        element_text = element.text
-        assert self.expected_text == element_text
+    def wait_for_element_to_be_clickable(self, locator, locator_type=DEFAULT_LOCATOR_TYPE):
+        wait = WebDriverWait(self.driver, 10)
+        element = wait.until(EC.element_to_be_clickable((locator_type, locator)))
+        time.sleep(10)
 
+    def visibility_of_element_located(self):
+        element = '// *[ @ id = "__next"] / div[1] / main / div[2] / div[1] / div / div[1] '
+        WebDriverWait(self, driver, 10).until(EC.visibility_of(element))
+        time.sleep(10)
 
+    def print_nice_word(self):
+        if self.players_count_element_xpath == '// *[ @ id = "__next"] / div[1] / main / div[2] / div[1] / div / div[1] ':
+            print('Well done))))))))')
+        else:
+            print('Try to another way')
