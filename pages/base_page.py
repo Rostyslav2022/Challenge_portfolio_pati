@@ -11,6 +11,7 @@ from utils.settings import DEFAULT_LOCATOR_TYPE, EXPLICITLY_WAIT
 class BasePage:
 
     def __init__(self, driver: WebDriver):
+        self.add_player_hyperlink_xpath = "//*[2][name()='a']"
         self.players_count_element_xpath = '// *[ @ id = "__next"] / div[1] / main / div[2] / div[1] / div / div[1] '
         self.driver = driver
 
@@ -23,6 +24,17 @@ class BasePage:
     def get_page_title(self, url):
         self.driver.get(url)
         return self.driver.title
+
+    def assert_element_text(self, driver, xpath, expected_text):
+        """Comparing expected text with observed value from web element
+            :param driver: webdriver instance
+            :param xpath: xpath to element with text to be observed
+            :param expected_text: text what we expecting to be found
+            :return: None
+        """
+        element = driver.find_element(by=By.XPATH, value=xpath)
+        element_text = element.text
+        assert expected_text == element_text
 
     # def assert_element_text(self):
     #     self.driver = 'https://scouts-test.futbolkolektyw.pl'
@@ -47,4 +59,7 @@ class BasePage:
         if self.players_count_element_xpath == '// *[ @ id = "__next"] / div[1] / main / div[2] / div[1] / div / div[1] ':
             print('Well done))))))))')
         else:
-            print('Try to another way')
+            print('Try another way')
+
+    def click_on_add_player(self):
+        self.click_on_the_element(self.add_player_hyperlink_xpath)

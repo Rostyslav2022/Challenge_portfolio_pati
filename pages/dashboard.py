@@ -34,6 +34,8 @@ class Dashboard(BasePage):
           self.click_on_the_element(self.main_page_icon_xpath)
 
       def visibility_of_element_located(self):
-            self.click_on_the_element(self.players_count_element_xpath)
+          self.click_on_the_element(self.players_count_element_xpath)
 
+      def click_on_add_player(self):
+          self.click_on_the_element(self.add_player_hyperlink_xpath)
 

@@ -20,7 +20,7 @@ class TestVisibilityElement(unittest.TestCase):
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
-    def test_visibility_of_element_located (self):
+    def test_visibility_of_element_located(self):
         user_login = LoginPage(self.driver)
         user_login.title_of_page()
         user_login.type_in_email('user07@getnada.com')

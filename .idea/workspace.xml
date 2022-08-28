@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af043082-3680-4872-ac8b-c10614ad4e6d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test_cases/Checking_displaying_information_tc5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/Checking_not_valid_login_tc2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/Checking_switch_languages_tc3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/Checking_text_on_the_button_tc4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_cases/Checking_valid_login_tc1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/add_player_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_cases/Checking_add_player_tc6.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/dashboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/dashboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_cases/Checking_displaying_information_tc5.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/Checking_displaying_information_tc5.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_cases/login_to_the_system.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_cases/login_to_the_system.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,8 +53,29 @@
       <recent name="C:\Users\Ros\Documents\GitHub\challenge_portfolio_pati\drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for Checking_valid_login_tc1.TestLoginPage">
-    <configuration name="Python tests for Checking_displaying_information_tc5.TestVisibilityElement" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for Checking_add_player_tc6.TestDashboardPage">
+    <configuration name="add_player_page" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="challenge_portfolio_pati" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pages" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pages/add_player_page.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for Checking_add_player_tc6.TestDashboardPage" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="challenge_portfolio_pati" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -67,11 +85,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Checking_displaying_information_tc5.TestVisibilityElement&quot;" />
+      <option name="_new_target" value="&quot;Checking_add_player_tc6.TestDashboardPage&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for Checking_not_valid_login_tc2.TestLoginPage" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_cases.Checking_add_player_tc1.TestDashboardPage" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="challenge_portfolio_pati" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -81,11 +99,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Checking_not_valid_login_tc2.TestLoginPage&quot;" />
+      <option name="_new_target" value="&quot;test_cases.Checking_add_player_tc1.TestDashboardPage&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for Checking_switch_languages_tc3.TestLoginPage" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_cases.Checking_add_player_tc6.TestDashboardPage" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="challenge_portfolio_pati" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -95,11 +113,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Checking_switch_languages_tc3.TestLoginPage&quot;" />
+      <option name="_new_target" value="&quot;test_cases.Checking_add_player_tc6.TestDashboardPage&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for Checking_text_on_the_button_tc4.TestCheckButtonText" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_cases.Checking_add_player_tc6.TestDashboardPage" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="challenge_portfolio_pati" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -109,11 +127,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Checking_text_on_the_button_tc4.TestCheckButtonText&quot;" />
+      <option name="_new_target" value="&quot;test_cases.Checking_add_player_tc6.TestDashboardPage&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for Checking_valid_login_tc1.TestLoginPage" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_cases.Checking_add_player_tc6.TestDashboardPage" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="challenge_portfolio_pati" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -123,17 +141,45 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Checking_valid_login_tc1.TestLoginPage&quot;" />
+      <option name="_new_target" value="&quot;test_cases.Checking_add_player_tc6.TestDashboardPage&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_cases.Checking_displaying_information_tc5.TestVisibilityElement" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="challenge_portfolio_pati" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_cases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_cases.Checking_displaying_information_tc5.TestVisibilityElement&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_cases.Checking_valid_login_tc1.TestLoginPage" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="challenge_portfolio_pati" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_cases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_cases.Checking_valid_login_tc1.TestLoginPage&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for Checking_valid_login_tc1.TestLoginPage" />
-        <item itemvalue="Python tests.Python tests for Checking_displaying_information_tc5.TestVisibilityElement" />
-        <item itemvalue="Python tests.Python tests for Checking_text_on_the_button_tc4.TestCheckButtonText" />
-        <item itemvalue="Python tests.Python tests for Checking_switch_languages_tc3.TestLoginPage" />
-        <item itemvalue="Python tests.Python tests for Checking_not_valid_login_tc2.TestLoginPage" />
+        <item itemvalue="Python tests.Python tests for Checking_add_player_tc6.TestDashboardPage" />
+        <item itemvalue="Python tests.Python tests for test_cases.Checking_add_player_tc6.TestDashboardPage" />
+        <item itemvalue="Python tests.Python tests for test_cases.Checking_add_player_tc6.TestDashboardPage" />
+        <item itemvalue="Python tests.Python tests for test_cases.Checking_add_player_tc6.TestDashboardPage" />
+        <item itemvalue="Python.add_player_page" />
       </list>
     </recent_temporary>
   </component>
@@ -159,5 +205,13 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="tests">
+        <watch expression="self.failureException" />
+        <watch expression="dashboard_page" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
